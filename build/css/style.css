@@ -1,0 +1,230 @@
+/*Declarando fonte utilizada*/
+ @font-face {
+     font-family: Roboto;
+     src: url('../fonts/Roboto-Light.ttf') format('ttf'),
+  }
+ 
+ body {
+    height: 100%;
+    width: 100%; 
+  }
+
+  /*Seção do Banner*/
+
+#banner .container {
+    background-image: url('../images/imgprincipal.png');
+    background-size: cover;
+    height: 900px;
+    margin: auto;
+    width: 100%;
+    max-width: 100%;
+  }
+
+#banner .row h1{
+    text-align: center;
+    color: #5b6739;
+    font-family: Roboto;
+    font-size: 45px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin-top: 70px;
+    letter-spacing:0,4px;
+}
+
+#banner .row h4{
+    text-align: center;
+    color: #2d3b09;
+    font-family: Roboto;
+    font-weight: bold;
+    margin-top: 13px;
+    font-size: 20px;
+    letter-spacing: 0,4px;
+}
+
+ /*Seção do carrousel*/
+
+  #carrousel .item img{
+    margin-top: 46px;
+    border: 10px solid #797c7b;
+    height: 200px;
+    width: 290px;
+   }
+
+   #carrousel .item h1{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: bold;
+    color: #ffffff;
+    margin: -9px;
+    padding-top: 30px;
+    text-align: center;
+    white-space: nowrap;
+   }
+
+   #carrousel .item p{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: lighter;
+    color: #ffffff;
+    margin: -9px;
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  #carrousel .item{
+    width: 340px; 
+    padding: 20px;
+    display: inline-block;
+  }
+
+  #carrousel {
+      background-color: #454545;
+      height: 500px;
+      width: 100%;
+  }
+
+ /*Seção das informações (Foto com texto do lado)*/
+
+  #information{
+    background-color: #6f6f6f;
+    height: 500px;
+    width: 100%;
+  }
+
+  #information .item img {
+    margin-left: -20px;
+    margin-top: 60px;
+    border: 18px solid #343434;
+    border-radius: 100%;
+    width: 390px;
+    height: 380px;
+    overflow: hidden;
+  }
+
+  #information .item1 h1 {
+    margin-top: 90px;
+    font-weight: bolder;
+    color: #ffffff;
+    text-transform: uppercase;
+    line-height: 50px;
+  }
+
+  #information .item2 p {
+    color: #ffffff;
+    letter-spacing: 0,8px;
+    line-height: 20px;
+    font-size: 15px;
+  }
+
+  #information .item3 p {
+    color: #ffffff;
+    font-weight: bolder;
+    letter-spacing: 0,8px;
+    line-height: 20px;
+    font-size: 15px;
+  }
+
+  #information .item4 p {
+    color: #ffffff;
+    font-style: italic;
+    letter-spacing: 0,8px;
+    line-height: 20px;
+    font-size: 15px;
+  }
+
+  #information .item5 p {
+    color: #ffffff;
+    letter-spacing: 0,8px;
+    line-height: 20px;
+    font-size: 15px;
+  }
+
+   /*Seção do Rodapé*/
+  footer {
+      text-align: center;
+      background-color: #454545;
+      height: 90px;
+  }
+
+  footer .container h1{
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin-top: 35px;
+  }
+
+  /*-----------------------------------------------------------------------------------------------*/
+
+  /*INICIO DO MOBILE*/
+
+  @media (max-width:980px){
+      
+      /*Responsivo do Banner*/
+    
+    #banner .container {
+        background-image: url('../images/imgprincipal.png');
+        width: 100%;
+        height: 300px;
+
+    }
+    #banner .row h1{
+        background-color:#393939;
+        height: 30px;
+        color: white;
+        margin-top: 0px;
+        font-size: 22px;
+        margin-bottom: 0px;
+        text-align: center;
+    }
+    #banner .row h4{
+        background-color:#393939;
+        height: 30px;
+        color: white;
+        margin-top: -1px;
+        font-size: 13px;
+        text-align: center;
+    }
+
+    /*Responsivo do Carrousel*/
+
+    #carrousel {
+        background-color: #454545;
+        height: 100%;
+        width: 100%;
+    }
+    #carrousel .item img{
+        margin-top: 5px;
+     }
+
+    /*Responsivo do Information (Foto/Texto)*/
+
+    #information{
+        background-color: #6f6f6f;
+        height: 100%;
+        width: 100%;
+      }
+    
+    #information .item img{
+        margin-top: 20px;
+        margin-left: 3px;
+        border-radius: 100%;
+    }
+    #information .item1 h1 {
+        text-align: center;
+        margin-top: 10px;
+      }
+    #information .item2 p {
+        text-align: center;
+      }
+    #information .item3 p {
+        text-align: center;
+      }
+    #information .item4 p {
+        text-align: center;
+      }
+    #information .item5 p {
+        text-align: center;
+      }
